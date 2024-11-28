@@ -1,3 +1,93 @@
+*,
+html,
+body {
+  font-family: "Roboto";
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
 header {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+}
+
+.header-cima {
   display: flex;
+  align-items: center;
+  gap: 1.5em;
+  border-bottom: 1px solid #e3e4e6;
+  padding: 0.5em 5em;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9em;
+  color: #17181a;
+}
+
+.contato img {
+  margin-right: 0.8em;
+}
+
+.contato:nth-child(1) {
+  border-right: 1px solid #e3e4e6;
+  padding-right: 1.5em;
+}
+
+.header-baixo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 5em;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-a {
+  text-decoration: none;
+  color: #17181a;
+  font-size: 0.9em;
+  margin: 0 1em;
+  background: linear-gradient(
+    to right,
+    #cd001a 0%,
+    #cd001a 0%,
+    transparent 100%
+  );
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.header-a:hover {
+  background-size: 100% 2px;
+}
+
+.header-btn {
+  font-size: 1.1em;
+  color: white;
+  background-color: #cd001a;
+  border: none;
+  width: 12em;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+.header-btn:hover {
+  background-color: #9b0519;
+  cursor: pointer;
 }

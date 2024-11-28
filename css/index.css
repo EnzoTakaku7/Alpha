@@ -4,80 +4,79 @@ body {
   font-family: "Roboto";
 }
 
-body {
+body,
+main {
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  margin-top: 5em;
 }
 
-.header-cima {
-  display: flex;
-  align-items: center;
-  gap: 1.5em;
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #67000d;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #020a18;
+}
+
+.tela-1 {
+  background-color: #020a18;
   width: 100%;
-  border-bottom: 1px solid #e3e4e6;
-  padding: 0.5em 5em;
+  height: 90vh;
 }
 
-.contato {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 0.9em;
-  color: #17181a;
-}
-
-.contato img {
-  margin-right: 0.8em;
-}
-
-.contato:nth-child(1) {
-  border-right: 1px solid #e3e4e6;
-  padding-right: 1.5em;
-}
-
-.header-baixo {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em 5em;
-  align-items: center;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-
-.header-a {
-  text-decoration: none;
-  color: #17181a;
-  margin: 0 1em;
-  background: linear-gradient(
-    to right,
-    #cd001a 0%,
-    #cd001a 0%,
-    transparent 100%
-  );
-  background-size: 0 2px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.3s ease;
-}
-
-.header-a:hover {
-  background-size: 100% 2px;
-}
-
-.header-btn {
-  font-size: 1.1em;
+.div-tela-1 {
+  padding: 3em 0 0 5em;
   color: white;
-  background-color: #cd001a;
-  border: none;
-  width: 12em;
-  padding: 0.5em;
 }
 
-.header-btn:hover {
-  background-color: #bb1127;
+.slogan {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.slogan-texto {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.cor1 {
+  color: #e6808c;
+  font-size: 1.2em;
+}
+
+.tela-1-btn {
+  background-color: #cd001a;
+  border: 5px solid #020a18;
+  padding: 0.8em;
+  font-size: 1em;
+  width: 12em;
+  color: white;
+  border-radius: 4px;
+  margin-top: 1em;
+  box-shadow: 0px 0px 0px 1px #161d28;
+}
+
+.tela-1-btn:hover {
+  background-color: #9b0519;
   cursor: pointer;
+}
+
+.text-marcas {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-top: 9em;
+}
+
+.marcas img {
+  margin-right: 3.5em;
 }
