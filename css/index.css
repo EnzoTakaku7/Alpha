@@ -42,6 +42,7 @@ body::-webkit-scrollbar-track {
   margin: 0;
   padding: 0;
   font-weight: 400;
+  margin-top: 1em;
 }
 
 .slogan-texto {
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-track {
 .text-marcas {
   font-size: 0.9em;
   font-weight: 300;
-  margin-top: 9em;
+  margin-top: 6.5em;
 }
 
 .marcas img {
